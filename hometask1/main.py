@@ -24,7 +24,7 @@ class MyIterator:
         return city
 
 
-with open('output_file.txt', 'w') as out_file:
+with open('output.txt', 'w') as out_file:
     for city in MyIterator('countries.json'):
         try:
             out_file.write(f"{city} : https://wikipedia.org/wiki/{city.replace(' ', '_')}\n")
